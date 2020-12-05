@@ -1,0 +1,45 @@
+.card {
+  border-radius: 2px;
+  height: auto;
+  margin: 1em auto;
+  width: 325px;
+  color: #404e5a;
+  padding: 1em 0;
+}
+
+.card > .img-container {
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card > .title-container{
+  /* -webkit-box-shadow: 0 7px 6px -6px #999;
+    -moz-box-shadow: 0 7px 6px -6px #999;
+        box-shadow: 0 7px 6px -6px #999; */
+  color:#6CADDC;
+  text-align: center;
+
+}
+
+.card img {
+  width: 40%;
+}
+
+.card > .content {
+  font-size: 15px;
+
+}
+
+.card > .content > ul {
+  list-style-type: none;
+  padding: 1em 0px 0px;
+  text-align: center;
+
+}
+
+.card > .content > ul > li {
+  margin-top: 1em;
+
+}
+
