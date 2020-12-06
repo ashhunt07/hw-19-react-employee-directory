@@ -1,12 +1,14 @@
 
 .menuBar{
   clear:both;
-  position: relative;
+  /* position: relative; */
   margin-bottom: 2em;
+  width: 100%;
 }
 
 .button-group {
-  justify-content: center;
+  display: flex;
+    justify-content: center;
 }
   
   

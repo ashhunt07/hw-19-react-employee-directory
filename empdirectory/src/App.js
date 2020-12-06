@@ -30,7 +30,7 @@ const sortNames = () => {
         setNameSort("AZ")
         break;
     default:
-            return;
+        return;
     }
     }
 
@@ -39,48 +39,48 @@ const sortNames = () => {
 
     switch (eventKey) {
         case "Project Manager":
-        setEmp([...employees].filter(employee =>
-            employee.title.includes("Project Manager")
+        setEmp([...employees].filter(employ =>
+            employ.title.includes("Project Manager")
         ));
         break;
         case "Designer":
-        setEmp([...employees].filter(employee =>
-            employee.title.includes("Designer")
+        setEmp([...employees].filter(employ =>
+            employ.title.includes("Designer")
         ));
         break;
         case "Developer":
-        setEmp([...employees].filter(employee =>
-            employee.title.includes("Developer")
+        setEmp([...employees].filter(employ =>
+            employ.title.includes("Developer")
         ));
         break;
         case "Engineer":
-            setEmp([...employees].filter(employee =>
-                employee.title.includes("Engineer")
+            setEmp([...employees].filter(employ =>
+                employ.title.includes("Engineer")
             ));
         break;
         case "San Antonio":
-        setEmp([...employees].filter(employee =>
-            employee.location.includes("San Antonio")
+        setEmp([...employees].filter(employ =>
+            employ.location.includes("San Antonio")
         ));
         break;
         case "Dallas":
-        setEmp([...employees].filter(employee =>
-            employee.location.includes("Dalla")
+        setEmp([...employees].filter(employ =>
+            employ.location.includes("Dalla")
         ));
         break;
         case "Austin":
-        setEmp([...employees].filter(employee =>
-            employee.location.includes("Austin")
+        setEmp([...employees].filter(employ =>
+            employ.location.includes("Austin")
         ));
         break;
         case "Las Angeles":
-        setEmp([...employees].filter(employee =>
-            employee.location.includes("Las Angeles")
+        setEmp([...employees].filter(employ =>
+            employ.location.includes("Las Angeles")
         ));
         break;
         case "New York":
-        setEmp([...employees].filter(employee =>
-            employee.location.includes("New York")
+        setEmp([...employees].filter(employ =>
+            employ.location.includes("New York")
         ));
         break;
         default:
@@ -96,7 +96,7 @@ const sortNames = () => {
         }
 
 
-  // Map over this.state.employees and render a EmployeeCard component for each friend object
+  // Map over employees and render a EmployeeCard component for each friend object
 
     return (
         <Wrapper>
@@ -111,7 +111,6 @@ const sortNames = () => {
             <CardWrapper>
             {employees.map(emp => (
                 <EmployeeCard
-                    id={emp.id}
                     key={emp.id}
                     name={emp.name}
                     image={emp.image}

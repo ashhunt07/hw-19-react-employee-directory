@@ -1,23 +1,19 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import { FaGithub } from 'react-icons/fa';
+import { FaCat } from 'react-icons/fa';
 import './style.css';
 
 function Title() {
     return (
     <header className="jumbotron">
         <div>
-            <Navbar className="justify-content-between">
+            <Navbar className="justify-content-left">
                 <Navbar.Brand>
-                    <FaGithub />
+                    <h3> <FaCat size={30}/>&emsp;RandomCat</h3>
                 </Navbar.Brand>
-                <Nav>
-                    <Nav.Link href="#" target="_Blank"><FaGithub className="github-icon" /></Nav.Link>
-                </Nav>
 
             </Navbar>
-            <h1 className="text-center title">Employee List</h1>
+            <h1 className="text-center title">Your Employee List</h1>
 
         </div>
     </header>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import FilterBtns from '../Filters/';
+import FilterBtns from '../FilterBtns';
 
 function FilterMenu (props) {
     return(
