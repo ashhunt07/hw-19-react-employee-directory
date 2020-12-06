@@ -9,7 +9,6 @@ import CardWrapper from "./components/CardWrapper";
 import employees from "./employee.json";
 
 
-
 function App() {
     // Handles which cards get wrapped to
     const [emp, setEmp] = useState(employees);
@@ -18,7 +17,6 @@ function App() {
         const [nameSort, setNameSort] = useState("AZ");
         const [locationSort, setLocationSort] = useState("AZ");
         const [titleSort, setTitleSort] = useState("AZ");
-
 
 
 
