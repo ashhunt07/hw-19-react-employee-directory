@@ -7,7 +7,7 @@ function FilterMenu (props) {
         <div className="menuBar">
             <div className="button-group">
                 <FilterBtns 
-                    resetBtn={props.resetBtn} sortBtn={props.sortBtn} children={props.children} handleDropdown={props.handleDropdown}
+                    resetBtn={props.resetBtn} sortByName={props.sortByName} sortByTitle={props.sortByTitle} sortByLocation={props.sortByLocation} children={props.children} handleDropdown={props.handleDropdown}
                     />
         </div>
     </div>
