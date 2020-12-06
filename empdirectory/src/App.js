@@ -21,12 +21,12 @@ function App() {
 
 const sortNames = () => {
     switch (nameSort) {
-        case 'AZ':
-        setEmp([...emp].sort((a, b) => (a.name > b.name) ? 1 : -1));
+        case "AZ":
+        setEmp(emp.sort((a, b) => (a.name > b.name) ? 1 : -1));
         setNameSort("ZA")
         break;
-        case 'ZA':
-        setEmp([...emp].sort((a, b) => (a.name < b.name) ? 1 : -1))
+        case "ZA":
+        setEmp(emp.sort((a, b) => (a.name < b.name) ? 1 : -1))
         setNameSort("AZ")
         break;
     default:
@@ -39,48 +39,48 @@ const sortNames = () => {
 
     switch (eventKey) {
         case "Project Manager":
-        setEmp([...employees].filter(employ =>
-            employ.title.includes("Project Manager")
+        setEmp(emp.filter(e =>
+            e.title.includes("Project Manager")
         ));
         break;
         case "Designer":
-        setEmp([...employees].filter(employ =>
-            employ.title.includes("Designer")
+        setEmp(emp.filter(e =>
+            e.title.includes("Designer")
         ));
         break;
         case "Developer":
-        setEmp([...employees].filter(employ =>
-            employ.title.includes("Developer")
+        setEmp(emp.filter(e =>
+            e.title.includes("Developer")
         ));
         break;
         case "Engineer":
-            setEmp([...employees].filter(employ =>
-                employ.title.includes("Engineer")
+            setEmp(emp.filter(e =>
+                e.title.includes("Engineer")
             ));
         break;
         case "San Antonio":
-        setEmp([...employees].filter(employ =>
-            employ.location.includes("San Antonio")
+        setEmp(emp.filter(e =>
+            e.location.includes("San Antonio")
         ));
         break;
         case "Dallas":
-        setEmp([...employees].filter(employ =>
-            employ.location.includes("Dalla")
+        setEmp(emp.filter(e =>
+            e.location.includes("Dalla")
         ));
         break;
         case "Austin":
-        setEmp([...employees].filter(employ =>
-            employ.location.includes("Austin")
+        setEmp(emp.filter(e =>
+            e.location.includes("Austin")
         ));
         break;
         case "Las Angeles":
-        setEmp([...employees].filter(employ =>
-            employ.location.includes("Las Angeles")
+        setEmp(emp.filter(e =>
+            e.location.includes("Las Angeles")
         ));
         break;
         case "New York":
-        setEmp([...employees].filter(employ =>
-            employ.location.includes("New York")
+        setEmp(emp.filter(e =>
+            e.location.includes("New York")
         ));
         break;
         default:
@@ -109,15 +109,15 @@ const sortNames = () => {
             handleDropdown={handleDropdown} /> 
 
             <CardWrapper>
-            {employees.map(emp => (
+            {employees.map(e => (
                 <EmployeeCard
-                    key={emp.id}
-                    name={emp.name}
-                    image={emp.image}
-                    title={emp.title}
-                    location={emp.location}
-                    email={emp.email}
-                    phone={emp.phone}
+                    key={e.id}
+                    name={e.name}
+                    image={e.image}
+                    title={e.title}
+                    location={e.location}
+                    email={e.email}
+                    phone={e.phone}
                 />
             ))}
             </CardWrapper>
@@ -129,7 +129,7 @@ const sortNames = () => {
 
 export default App;
 
-const sort = arr => arr.sort((a, b) => a - b);
-//By default,the sort() function sorts values as strings.Fix this by providing a compare function.
-// Example
-sort([1, 5, 2, 4, 3]); 
+// const sort = arr => arr.sort((a, b) => a - b);
+// //By default,the sort() function sorts values as strings.Fix this by providing a compare function.
+// // Example
+// sort([1, 5, 2, 4, 3]); 
