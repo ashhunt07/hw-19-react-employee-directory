@@ -102,3 +102,22 @@ dist
 
 # TernJS port file
 .tern-port
+
+# To remove .DS_Store Use: 
+# find and remove .DS_Store
+# find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+
+# # push changes to GitHub
+# git add .gitignore
+# git commit -m '.DS_Store removed'
+# git push origin master
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
