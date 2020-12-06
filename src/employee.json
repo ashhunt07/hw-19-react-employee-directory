@@ -124,6 +124,15 @@
     "location": "Austin",
     "email": "douglas.mason@example.com",
     "phone": "(567)-007-0987"
+  },
+  {
+    "id": 15,
+    "name": " Tony Lacroix",
+    "image": "https://randomuser.me/api/portraits/men/76.jpg",
+    "title": "Designer",
+    "location": "San Antonio",
+    "email": "tony.lacroix@example.com",
+    "phone": "(567)-837-8333"
   }
 
 ]
