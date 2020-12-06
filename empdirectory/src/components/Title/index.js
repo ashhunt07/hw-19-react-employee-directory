@@ -13,7 +13,7 @@ function Title() {
                     <FaGithub />
                 </Navbar.Brand>
                 <Nav>
-                    <Nav.Link href="https://github.com/GedalyaKrycer/unit-19-react-homework-employee-directory" target="_Blank"><FaGithub className="github-icon" /></Nav.Link>
+                    <Nav.Link href="#" target="_Blank"><FaGithub className="github-icon" /></Nav.Link>
                 </Nav>
 
             </Navbar>

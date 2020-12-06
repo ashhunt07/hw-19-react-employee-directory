@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import FilterMenu from "./components/FilterMenu";
@@ -14,26 +14,8 @@ function App() {
     // Handles which cards get wrapped to
     const [emp, setEmp] = useState(employees);
 
- // Handles the search state
-    const [search, setSearch] = useState('');
-
   // Handles the name sorting state
     const [nameSort, setNameSort] = useState("AZ");
-
-
-
-
-  // Runs the first time the app starts or a new search term is provided
-    useEffect(() => {
-
-    // Powers the search to only show the people that match the search value state
-    const results = emp.filter(employee =>
-        employee.name.includes(search)
-    );
-    setSearch(results);
-
-
-    }, [ ])
 
 
 
@@ -57,8 +39,8 @@ const sortNames = () => {
 
     switch (eventKey) {
         case "Project Manager":
-        setEmp([...emp].filter(emp =>
-            emp.title.includes("Project Manager")
+        setEmp([...employees].filter(employee =>
+            employee.title.includes("Project Manager")
         ));
         break;
         case "Designer":
